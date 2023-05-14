@@ -16,7 +16,7 @@ const Section4 = () => {
         {/* Left */}
         <Grid item xs={12} md={6}>
           <Stack spacing={2} sx={{ maxWidth: 480 }}>
-            <Title variant={{ xs: "h3", md: "h2" }}>{top.title}</Title>
+            <Title variant={{ xs: "h3", md: "h2" }} id="about">{top.title}</Title>
 
             <Typography variant="body2" color="text.secondary" sx={{ pb: 2 }}>
               {top.subtitle}
@@ -53,7 +53,7 @@ const Section4 = () => {
         {/* Right */}
         <Grid item xs={12} md={6}>
           <Stack spacing={2} sx={{ maxWidth: 480 }}>
-            <Title variant={{ xs: "h3", md: "h2" }}>{bottom.title}</Title>
+            <Title variant={{ xs: "h3", md: "h2" }} id="robots">{bottom.title}</Title>
 
             <Tabs
               value={tabValue}

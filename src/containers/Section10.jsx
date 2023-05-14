@@ -1,9 +1,6 @@
 import { Container, Grid, Stack, Typography, Button } from "@mui/material";
 import React from "react";
 import Title from "../components/Title";
-import { section10Content } from "../utils/content";
-
-const { SOCIALS } = section10Content;
 
 const Section10 = () => {
   return (
@@ -11,6 +8,7 @@ const Section10 = () => {
       <Title
         variant={{ xs: "h3", md: "h2" }}
         sx={{ textAlign: "center", mb: { xs: 5 } }}
+        id="contact"
       >
         Contact Us
       </Title>

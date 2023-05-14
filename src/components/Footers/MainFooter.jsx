@@ -7,7 +7,6 @@ import {
 } from "@mui/material";
 import { Stack } from "@mui/system";
 import React from "react";
-import OutlinedButton from "../Buttons/OutlinedButton";
 import Title from "../Title";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';

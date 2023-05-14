@@ -20,7 +20,7 @@ const Section5 = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Container sx={{ mt: { xs: 10, md: 20, lg: 25 } }}>
+    <Container sx={{ mt: { xs: 10, md: 20, lg: 25 } }} id="bellbrawls">
       <Box
         sx={{
           position: "relative",
@@ -76,6 +76,7 @@ const Section5 = () => {
                   fullWidth={isMobile}
                   sx={{ height: 48 }}
                   disabled
+                  href="https://www.robotcombatevents.com/events/980"
                 >
                   Sign up
                 </OutlinedButton>

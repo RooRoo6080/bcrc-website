@@ -1,21 +1,16 @@
 import {
   AppBar,
   Container,
-  IconButton,
   Stack,
   Typography,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import React, { Children } from "react";
+import React from "react";
 import { NAVBAR_HEIGHT } from "../../constants";
 import useScrollPosition from "../../hooks/useScrollPosition";
 import { navbarContent } from "../../utils/content";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import CallMadeIcon from "@mui/icons-material/CallMade";
-import LanguageIcon from "@mui/icons-material/Language";
-import LaunchButton from "../Buttons/LaunchButton";
-import MenuIcon from "@mui/icons-material/Menu";
 
 const { Logo } = navbarContent;
 
@@ -41,6 +36,10 @@ const Navbar = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
+  const scroll = (ref) => {
+    document.querySelector(ref).scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+
   return (
     <AppBar
       elevation={0}
@@ -65,7 +64,7 @@ const Navbar = () => {
           flexWrap="wrap"
         >
           {/* Logo */}
-          <img src={Logo} style={{ height: "100%", objectFit: "contain" }} />
+          <img src={Logo} onClick={() => scroll("#top")} style={{ height: "100%", objectFit: "contain" }} />
 
           {/* Links */}
           {!isMobile && (
@@ -78,27 +77,27 @@ const Navbar = () => {
               flexWrap="wrap"
             >
               <LinkButton>
-                <Typography variant="body2">Bell Brawls</Typography>
+                <Typography variant="body2" onClick={() => scroll("#bellbrawls")}>Bell Brawls</Typography>
                 <KeyboardArrowDownIcon fontSize="small" />
               </LinkButton>
 
               <LinkButton>
-                <Typography variant="body2">About Us</Typography>
+                <Typography variant="body2" onClick={() => scroll("#about")}>About Us</Typography>
                 <KeyboardArrowDownIcon fontSize="small" />
               </LinkButton>
 
               <LinkButton>
-                <Typography variant="body2">Robots</Typography>
+                <Typography variant="body2" onClick={() => scroll("#robots")}>Robots</Typography>
                 <KeyboardArrowDownIcon fontSize="small" />
               </LinkButton>
 
               <LinkButton>
-                <Typography variant="body2">Arena Rental</Typography>
+                <Typography variant="body2" onClick={() => scroll("#products")}>Products & Rentals</Typography>
                 <KeyboardArrowDownIcon fontSize="small" />
               </LinkButton>
 
               <LinkButton>
-                <Typography variant="body2">Kits</Typography>
+                <Typography variant="body2" onClick={() => scroll("#contact")}>Contact Us</Typography>
                 <KeyboardArrowDownIcon fontSize="small" />
               </LinkButton>
             </Stack>

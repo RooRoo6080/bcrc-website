@@ -7,11 +7,14 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
+  IconButton,
 } from "@mui/material";
 import React from "react";
 import { section1Content } from "../utils/content";
 import useMeasure from "react-use-measure";
 import Title from "../components/Title";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const {
   MainBG,
@@ -45,14 +48,16 @@ const Section1 = () => {
 
   const [ref, { height }] = useMeasure();
 
+  const scroll = (ref) => {
+    document.querySelector(ref).scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+
   return (
-    <Box sx={{ width: "100%" }}>
-      {/* Main Background */}
+    <Box sx={{ width: "100%" }} id="top">
       <Box sx={{ position: "fixed", zIndex: -10, top: 0, left: 0, right: 0 }}>
         <img src={MainBG} style={{ width: "100%" }} />
       </Box>
 
-      {/* backgrounds elements */}
       <Box
         ref={ref}
         sx={{
@@ -66,7 +71,6 @@ const Section1 = () => {
       >
         <img src={MainBG} style={{ width: "100%", opacity: 0 }} />
 
-        {/* Star */}
         <img
           src={ShootingStarImage}
           style={{
@@ -77,7 +81,6 @@ const Section1 = () => {
           }}
         />
 
-        {/* Trees */}
         <Hidden mdDown>
           <img
             src={TreesImage}
@@ -91,7 +94,6 @@ const Section1 = () => {
           />
         </Hidden>
 
-        {/* Cliff */}
         <img
           src={CliffImage}
           style={{
@@ -103,7 +105,6 @@ const Section1 = () => {
           }}
         />
 
-        {/* Horse */}
         <img
           src={HorseImage}
           style={{
@@ -128,7 +129,6 @@ const Section1 = () => {
         ></Box>
       </Box>
 
-      {/* Content */}
       <Container
         sx={{
           height: "80vh",
@@ -157,10 +157,16 @@ const Section1 = () => {
             spacing={4}
           >
             <CustomButton fullWidth={isSmallScreen}>
-              <Stack sx={{ textAlign: "left"}}>
-                <Typography variant="h5">Bell Brawls</Typography>
+              <Stack sx={{ textAlign: "left" }}>
+                <Typography variant="h5" onClick={() => scroll("#bellbrawls")}>Bell Brawls</Typography>
               </Stack>
             </CustomButton>
+            <IconButton href={"https://www.instagram.com/bcrcbots/"}>
+              <InstagramIcon sx={{ fontSize: 40 }} />
+            </IconButton>
+            <IconButton href={"https://www.youtube.com/@bcrcbots"}>
+              <YouTubeIcon sx={{ fontSize: 40 }} />
+            </IconButton>
           </Stack>
         </Stack>
       </Container>

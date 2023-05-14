@@ -9,7 +9,7 @@ const { title, subtitle, ITEMS } = section7Content;
 const Section7 = () => {
   return (
     <Container sx={{ mt: { xs: 10, md: 20, lg: 25 } }}>
-      <Title variant={{ xs: "h3", md: "h2" }} sx={{ mb: 2 }}>
+      <Title variant={{ xs: "h3", md: "h2" }} sx={{ mb: 2 }} id="products">
         {title}
       </Title>
 
