@@ -2,7 +2,7 @@ import { Container, Grid, Stack, Typography, Button } from "@mui/material";
 import React from "react";
 import Title from "../components/Title";
 
-const Section10 = () => {
+const Contact = () => {
   return (
     <Container maxWidth="md" sx={{ mt: { xs: 10, md: 20, lg: 25 } }}>
       <Title
@@ -39,4 +39,4 @@ const Section10 = () => {
   );
 };
 
-export default Section10;
+export default Contact;

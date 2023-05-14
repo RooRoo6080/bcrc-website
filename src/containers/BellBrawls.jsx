@@ -10,12 +10,12 @@ import {
 import React from "react";
 import OutlinedButton from "../components/Buttons/OutlinedButton";
 import Title from "../components/Title";
-import { section5Content } from "../utils/content";
+import { BellBrawlsContent } from "../utils/content";
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
-const { BannerBgImage, BannerBgImageMobile, title, subtitle } = section5Content;
+const { BannerBgImage, BannerBgImageMobile, title, subtitle } = BellBrawlsContent;
 
-const Section5 = () => {
+const BellBrawls = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -93,4 +93,4 @@ const Section5 = () => {
   );
 };
 
-export default Section5;
+export default BellBrawls;

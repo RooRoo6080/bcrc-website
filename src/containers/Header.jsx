@@ -10,7 +10,7 @@ import {
   IconButton,
 } from "@mui/material";
 import React from "react";
-import { section1Content } from "../utils/content";
+import { HeaderContent } from "../utils/content";
 import useMeasure from "react-use-measure";
 import Title from "../components/Title";
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -18,13 +18,13 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const {
   MainBG,
-  TreesImage,
-  CliffImage,
-  HorseImage,
-  ShootingStarImage,
+  Foreground,
+  ForegroundR,
+  Subject,
+  Detail,
   title,
   subtitle,
-} = section1Content;
+} = HeaderContent;
 
 const CustomButton = ({ children, ...props }) => (
   <Button
@@ -42,7 +42,7 @@ const CustomButton = ({ children, ...props }) => (
   </Button>
 );
 
-const Section1 = () => {
+const Header = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -72,7 +72,7 @@ const Section1 = () => {
         <img src={MainBG} style={{ width: "100%", opacity: 0 }} />
 
         <img
-          src={ShootingStarImage}
+          src={Detail}
           style={{
             position: "absolute",
             top: "30px",
@@ -83,7 +83,7 @@ const Section1 = () => {
 
         <Hidden mdDown>
           <img
-            src={TreesImage}
+            src={Foreground}
             style={{
               position: "absolute",
               width: "100%",
@@ -95,7 +95,7 @@ const Section1 = () => {
         </Hidden>
 
         <img
-          src={CliffImage}
+          src={ForegroundR}
           style={{
             height: "100%",
             position: "absolute",
@@ -106,7 +106,7 @@ const Section1 = () => {
         />
 
         <img
-          src={HorseImage}
+          src={Subject}
           style={{
             position: "absolute",
             height: "38%",
@@ -174,4 +174,4 @@ const Section1 = () => {
   );
 };
 
-export default Section1;
+export default Header;

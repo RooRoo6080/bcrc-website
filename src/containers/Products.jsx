@@ -2,11 +2,11 @@ import { Container, Grid, Typography, Button } from "@mui/material";
 import React from "react";
 import ServiceCard from "../components/Cards/ServiceCard";
 import Title from "../components/Title";
-import { section7Content } from "../utils/content";
+import { ProductsContent } from "../utils/content";
 
-const { title, subtitle, ITEMS } = section7Content;
+const { title, subtitle, ITEMS } = ProductsContent;
 
-const Section7 = () => {
+const Products = () => {
   return (
     <Container sx={{ mt: { xs: 10, md: 20, lg: 25 } }}>
       <Title variant={{ xs: "h3", md: "h2" }} sx={{ mb: 2 }} id="products">
@@ -33,4 +33,4 @@ const Section7 = () => {
   );
 };
 
-export default Section7;
+export default Products;

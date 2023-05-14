@@ -1,12 +1,11 @@
 import { Container, Grid, Stack, Tab, Tabs, Typography } from "@mui/material";
 import React, { useState } from "react";
-import OutlinedButton from "../components/Buttons/OutlinedButton";
 import Title from "../components/Title";
-import { section4Content } from "../utils/content";
+import { AboutContent } from "../utils/content";
 
-const { top, bottom } = section4Content;
+const { top, bottom } = AboutContent;
 
-const Section4 = () => {
+const About = () => {
   const [tabValue, setTabValue] = useState(0);
 
   return (
@@ -88,4 +87,4 @@ const Section4 = () => {
   );
 };
 
-export default Section4;
+export default About;
