@@ -64,7 +64,7 @@ const Navbar = () => {
           flexWrap="wrap"
         >
           {/* Logo */}
-          <img src={Logo} onClick={() => scroll("#top")} style={{ height: "100%", objectFit: "contain" }} />
+          <img src={Logo} onClick={() => scroll("#top")} style={{ height: "100%", objectFit: "fit" }} />
 
           {/* Links */}
           {!isMobile && (

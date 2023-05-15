@@ -49,7 +49,10 @@ const Footer = () => {
           <Typography variant="body2" color="text.secondary">
             Bellarmine Combat Robotics Competition
           </Typography>
-          <Container/>
+          <Typography variant="body2" color="text.secondary">
+            960 W Hedding St, San Jose, CA 95126
+          </Typography>
+          <Container />
           <IconButton href={"https://www.instagram.com/bcrcbots/"}>
             <InstagramIcon />
           </IconButton>
