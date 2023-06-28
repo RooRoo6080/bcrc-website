@@ -4,7 +4,7 @@ import Title from "../components/Title";
 
 const Contact = () => {
   return (
-    <Container maxWidth="md" sx={{ mt: { xs: 10, md: 20, lg: 25 } }}>
+    <Container maxWidth="md" sx={{ mt: { xs: 10, md: 20, lg: 5 } }}>
       <Title
         variant={{ xs: "h3", md: "h2" }}
         sx={{ textAlign: "center", mb: { xs: 5 } }}

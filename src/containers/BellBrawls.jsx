@@ -4,7 +4,6 @@ import {
   Grid,
   Stack,
   Typography,
-  useMediaQuery,
   useTheme,
 } from "@mui/material";
 import React from "react";
@@ -17,7 +16,7 @@ const { BannerBgImage, BannerBgImageMobile, title, subtitle } = BellBrawlsConten
 
 const BellBrawls = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  // const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Container sx={{ mt: { xs: 10, md: 20, lg: 25 } }} id="bellbrawls">
@@ -56,14 +55,14 @@ const BellBrawls = () => {
             <Stack spacing={2} justifyContent="center" sx={{ height: "100%" }}>
               <Title variant={{ xs: "h3", md: "h2" }}>{title}</Title>
 
-              <Typography variant="body2" color="text.secondary" sx={{ pb: 3 }}>
+              <Typography variant="body2" color="text.secondary" sx={{ pb: 3 }} style={{whiteSpace: 'pre-line'}}>
                 {subtitle}
               </Typography>
-              <Grid container rowSpacing={1} spacing={12}>
+              <Grid container rowSpacing={1} spacing={0}>
                 <OutlinedButton
                   startIcon={<YouTubeIcon />}
-                  fit={!isMobile}
-                  fullWidth={isMobile}
+                  fit={true}
+                  // fullWidth={isMobile}
                   sx={{ height: 48 }}
                   href="https://youtube.com/playlist?list=PLCGo_v3ZMduxlpF7wl21AiZgtTqLeZKe5"
                 >
@@ -72,8 +71,8 @@ const BellBrawls = () => {
                 <Box sx={{ m: 1 }} />
                 <OutlinedButton
                   arrow
-                  fit={!isMobile}
-                  fullWidth={isMobile}
+                  fit={true}
+                  // fullWidth={isMobile}
                   sx={{ height: 48 }}
                   disabled
                   href="https://www.robotcombatevents.com/events/980"

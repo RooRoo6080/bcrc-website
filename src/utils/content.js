@@ -18,8 +18,12 @@ import BannerBgImage from "../assets/images/BellBrawls/bell-brawls-background.we
 import BannerBgImageMobile from "../assets/images/BellBrawls/bell-brawls-background-mobile.webp";
 
 // Products
-import Sec7Image1 from "../assets/images/Products/arena.webp";
-import Sec7Image2 from "../assets/images/Products/morberizer.webp";
+import ArenaImg from "../assets/images/Products/arena.webp";
+import MorbImage from "../assets/images/Products/morberizer.webp";
+
+// Sponsors
+import RECRLogo from "../assets/images/Sponsors/recr.png";
+import RepeatLogo from "../assets/images/Sponsors/repeat.png";
 
 // Navbar
 import Logo from "../assets/images/logo.png";
@@ -31,14 +35,14 @@ export const HeaderContent = {
   Subject,
   Detail,
   title: "Bellarmine Combat Robotics Competition",
-  subtitle: "tagline tagline tagline",
+  subtitle: "",
 };
 
 export const AboutContent = {
   top: {
     title: "About Us",
     subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "The Bellarmine Combat Robotics Competition (BCRC), established in 2022, is a student-led organization that aims to cultivate engineering skills and enhance the landscape of combat robotics in Northern California by mentoring peers and organizing events.",
     image: NewsImg,
   },
   bottom: {
@@ -48,29 +52,41 @@ export const AboutContent = {
         name: "Queen of Hearts",
         image: Robot1Img,
         subtitle:
-          "QoH: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nRecord:\nWeapon:\nDrive:",
+          "QoH: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nClass:\nRecord:\nWeapon:",
       },
       {
         name: "Omni Seven",
         image: Robot2Img,
         subtitle:
-          "O7: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nRecord:\nWeapon:\nDrive:",
+          "O7: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nClass:\nRecord:\nWeapon:",
       },
       {
         name: "Culverizer",
         image: Robot3Img,
-        subtitle: "C: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nRecord:\nWeapon:\nDrive:",
+        subtitle: "C: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nClass:\nRecord:\nWeapon:\n\nex-bcrc",
       },
       {
         name: "Thwack!",
         image: Robot4Img,
-        subtitle: "T!: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nRecord:\nWeapon:\nDrive:",
+        subtitle: "T!: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nClass:\nRecord:\nWeapon:",
       },
       {
         name: "Bellicopter",
         image: Robot5Img,
         subtitle:
-          "B: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nRecord:\nWeapon:\nDrive:",
+          "B: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nClass:\nRecord:\nWeapon:",
+      },
+      {
+        name: "Orion",
+        image: Robot5Img,
+        subtitle:
+          "O: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nClass:\nRecord:\nWeapon:",
+      },
+      {
+        name: "Morberizer",
+        image: Robot5Img,
+        subtitle:
+          "M: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nClass:\nRecord:\nWeapon:",
       },
     ],
   },
@@ -81,7 +97,7 @@ export const BellBrawlsContent = {
   BannerBgImageMobile,
   title: "Bell Brawls",
   subtitle:
-    "Bell Brawls is an action-packed Beetleweight combat robotics tournament hosted in Silicon Valley. 18 teams will battle it out in the BCRC's 30 sq. ft. octagonal arena until a champion is crowned.",
+    "Bell Brawls is an action-packed 3lb combat robotics tournament hosted in Silicon Valley. Come and join us in the fight for robot supremacy every May and December. \nIn the meantime, watch the highlights of our previous competition.",
 };
 
 export const ProductsContent = {
@@ -91,8 +107,8 @@ export const ProductsContent = {
     {
       title: "Arena Rental",
       subtitle:
-        "A large and sturdy 30 sq. ft. arena for 3lb robot combat. Equipped with 2 full-height layers behind a kickplate, this polycarbonate arena allows for entertaining battles while keeping everyone safe. We will rent to events around San Francisco Bay Area.",
-      image: Sec7Image1,
+        "A large and sturdy 30 sq. ft. arena for 3lb robot combat. Equipped with 2 full-height layers behind a kickplate, this polycarbonate arena allows for entertaining battles while keeping everyone safe. Rentable for events around the Bay Area.",
+      image: ArenaImg,
       button: "Contact us to inquire",
       disabled: false,
       link: "mailto:bellarminecombatrobotics@gmail.com",
@@ -100,13 +116,21 @@ export const ProductsContent = {
     {
       title: "Morberizer Kit",
       subtitle:
-        "Are you looking for a way to get started in combat robotics with a cheap but powerful 1lb robot? This Morberizer kit will quench that thirst with a fun and destructive bot of your own.\nDo not operate outside of a safe test box.",
-      image: Sec7Image2,
+        "Are you looking for a way to get started in combat robotics with a cheap but competitive 1lb (antweight) robot? The Morberizer kit is the perfect solution for you! Inside is a everything you need to assemble the machine and its powerful horizontal spinner.",
+      image: MorbImage,
       button: "Buy",
       disabled: true
     },
   ],
 };
+
+export const sponsorsContent = {
+  SPONSORS: [
+    { image: RECRLogo, link: "https://www.recr.us" },
+    { image: RepeatLogo, link: "https://www.repeat-robotics.com" },
+  ],
+};
+
 
 export const navbarContent = {
   Logo,

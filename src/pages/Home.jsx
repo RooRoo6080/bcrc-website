@@ -7,17 +7,18 @@ import Contact from "../containers/Contact";
 import About from "../containers/About";
 import BellBrawls from "../containers/BellBrawls";
 import Products from "../containers/Products";
+import Sponsors from "../containers/Sponsors";
 
 const Home = () => {
   return (
     <div>
-      {/* Navbar */}
       <Navbar />
       <Header />
       <Box sx={{ bgcolor: "background.default", position: "relative" }}>
         <BellBrawls />
         <About />
         <Products />
+        <Sponsors/>
         <Contact />
         <Footer />
       </Box>

@@ -15,6 +15,7 @@ import useMeasure from "react-use-measure";
 import Title from "../components/Title";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import ForumIcon from '@mui/icons-material/Forum';
 
 const {
   MainBG,
@@ -161,12 +162,17 @@ const Header = () => {
                 <Typography variant="h5" onClick={() => scroll("#bellbrawls")}>Bell Brawls</Typography>
               </Stack>
             </CustomButton>
-            <IconButton href={"https://www.instagram.com/bcrcbots/"}>
-              <InstagramIcon sx={{ fontSize: 40 }} />
-            </IconButton>
-            <IconButton href={"https://www.youtube.com/@bcrcbots"}>
-              <YouTubeIcon sx={{ fontSize: 40 }} />
-            </IconButton>
+            <Stack direction={"row"} spacing={5}>
+              <IconButton href={"https://www.instagram.com/bcrcbots/"} >
+                <InstagramIcon sx={{ fontSize: 40 }} />
+              </IconButton>
+              <IconButton href={"https://www.youtube.com/@bcrcbots"}>
+                <YouTubeIcon sx={{ fontSize: 40 }} />
+              </IconButton>
+              <IconButton href={"https://discord.gg/hzvCajJf"}>
+                <ForumIcon sx={{ fontSize: 40 }} />
+              </IconButton>
+            </Stack>
           </Stack>
         </Stack>
       </Container>

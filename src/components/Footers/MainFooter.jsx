@@ -53,12 +53,14 @@ const Footer = () => {
             960 W Hedding St, San Jose, CA 95126
           </Typography>
           <Container />
-          <IconButton href={"https://www.instagram.com/bcrcbots/"}>
-            <InstagramIcon />
-          </IconButton>
-          <IconButton href={"https://www.youtube.com/@bcrcbots"}>
-            <YouTubeIcon />
-          </IconButton>
+          <Stack direction={"row"} spacing={5}>
+            <IconButton href={"https://www.instagram.com/bcrcbots/"}>
+              <InstagramIcon />
+            </IconButton>
+            <IconButton href={"https://www.youtube.com/@bcrcbots"}>
+              <YouTubeIcon />
+            </IconButton>
+          </Stack>
         </Stack>
       </Container>
     </Box>
