@@ -97,6 +97,11 @@ const Navbar = () => {
               </LinkButton>
 
               <LinkButton>
+                <Typography variant="body2" onClick={() => scroll("#sponsors")}>Sponsors</Typography>
+                <KeyboardArrowDownIcon fontSize="small" />
+              </LinkButton>
+
+              <LinkButton>
                 <Typography variant="body2" onClick={() => scroll("#contact")}>Contact Us</Typography>
                 <KeyboardArrowDownIcon fontSize="small" />
               </LinkButton>

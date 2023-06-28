@@ -8,6 +8,7 @@ import About from "../containers/About";
 import BellBrawls from "../containers/BellBrawls";
 import Products from "../containers/Products";
 import Sponsors from "../containers/Sponsors";
+import Sponsors2 from "../containers/Sponsors2";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <About />
         <Products />
         <Sponsors/>
+        <Sponsors2/>
         <Contact />
         <Footer />
       </Box>

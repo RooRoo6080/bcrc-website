@@ -1,29 +1,20 @@
 import { Container, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
-import Title from "../components/Title";
-import { sponsorsTeamContent } from "../utils/content";
+import { sponsorsEventContent } from "../utils/content";
 import { Link } from 'react-router-dom';
 
-const { SPONSORS } = sponsorsTeamContent;
+const { SPONSORS } = sponsorsEventContent;
 
 const Sponsors = () => {
     return (
-        <Container maxWidth="md" sx={{ mt: { xs: 10, md: 20, lg: 15 } }}>
-            <Title
-                variant={{ xs: "h3", md: "h2" }}
-                sx={{ textAlign: "center", mb: { xs: 0 } }}
-                id="sponsors"
-            >
-                Sponsors
-            </Title>
-            &nbsp;
+        <Container maxWidth="md" sx={{ mt: { xs: 10, md: 20, lg: 5 } }}>
             <Typography
                 variant="h5"
                 color="text.secondary"
                 style={{ whiteSpace: 'pre-line' }}
                 textAlign="center"
             >
-                Team & Event Sponsors
+                Event Sponsors
             </Typography>
 
             <Grid

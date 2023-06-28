@@ -110,10 +110,11 @@ const Header = () => {
           src={Subject}
           style={{
             position: "absolute",
-            height: "38%",
-            right: "14%",
-            bottom: "45%",
-            transform: "rotate(7deg)",
+            height: "50%",
+            right: "18%",
+            bottom: "37%",
+            transform: "rotate(0deg)",
+            visibility: isSmallScreen ? "hidden" : "visible",
           }}
         />
 
@@ -140,7 +141,7 @@ const Header = () => {
         <Stack sx={{ height: "100%" }} justifyContent="center">
           <Title
             variant={{ xs: "h3", sm: "h2", md: "h1" }}
-            sx={{ letterSpacing: "0.02em", mb: 1 }}
+            sx={{ letterSpacing: "0.02em", mb: 1, textShadow: '2px 2px 0px rgba(0, 0, 0, 0.25), -2px -2px 4px rgba(0, 0, 0, 0.25)' }}
           >
             {title}
           </Title>
