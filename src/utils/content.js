@@ -1,17 +1,20 @@
 // Header
 import Detail from "../assets/images/Header/main-bg-0-0.png";
 import MainBG from "../assets/images/Header/main-bg-0_1.webp";
+import MainBGMobile from "../assets/images/Header/main-bg-0_1-mobile.png";
 import Foreground from "../assets/images/Header/main-bg-1_1.png";
 import ForegroundR from "../assets/images/Header/main-bg-2_1.png";
 import Subject from "../assets/images/Header/main-bg-3.png";
 
 // About
 import NewsImg from "../assets/images/About/about-image.png";
-import Robot1Img from "../assets/images/About/robot-1.webp";
-import Robot2Img from "../assets/images/About/robot-2.webp";
-import Robot3Img from "../assets/images/About/robot-3.webp";
-import Robot4Img from "../assets/images/About/robot-4.webp";
-import Robot5Img from "../assets/images/About/robot-5.webp";
+import Thwack from "../assets/images/About/thwack.png";
+import Bellicopter from "../assets/images/About/bell.png";
+import Orion from "../assets/images/About/orion.png";
+import Morberizer from "../assets/images/About/morb.png";
+import QOH from "../assets/images/About/qoh.png";
+import O7 from "../assets/images/About/o7.png";
+import Culverizer from "../assets/images/About/culv.png";
 
 // BellBrawls
 import BannerBgImage from "../assets/images/BellBrawls/bell-brawls-background.png";
@@ -33,6 +36,7 @@ import Logo from "../assets/images/logo.png";
 
 export const HeaderContent = {
   MainBG,
+  MainBGMobile,
   Foreground,
   ForegroundR,
   Subject,
@@ -53,43 +57,43 @@ export const AboutContent = {
     TABS: [
       {
         name: "Thwack!",
-        image: Robot1Img,
+        image: Thwack,
         subtitle:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nClass:\nRecord:\nWeapon:",
+          "Thwack is a multi-faceted robot with a wedge on one side and a mighty spinner on the other. It deflects hits with its frontal armor before whipping around to deliver a high-energy impact to the sides of its opponent.\n\nClass: 3lb\nRecord: 3-3\nWeapon: Horizontal Spinner",
       },
       {
         name: "Bellicopter",
-        image: Robot2Img,
+        image: Bellicopter,
         subtitle:
-          "Bellicopter wields a 11oz blade that covers the entire chassis to deliver maximum damage in every direction. Each of its 4 wheels are driven by an individual motor.\n\nClass: 3lb\nRecord: 2-3\nWeapon: Overhead Spinner",
+          "Bellicopter wields a 11oz blade that covers the entire chassis to deliver maximum damage in every direction. Each of its 4 wheels are driven by an individual motor.\n\nClass: 3lb\nRecord: 2-3\nWeapon: Overhead Horizontal Spinner",
       },
       {
         name: "Orion",
-        image: Robot3Img,
-        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nClass:\nRecord:\nWeapon:",
+        image: Orion,
+        subtitle: "Orion is a powerful 3 pound Combat Robot that utilizes a vertical disk weapon to send opponents flying. Its 2 wheeled drive system lets it zoom across the field in seconds.\n\nClass: 3lb\nRecord: 0-2\nWeapon: Vertical Spinner",
       },
       {
         name: "Morberizer",
-        image: Robot4Img,
+        image: Morberizer,
         subtitle: "Morberizer is a powerful antweight horizontal spinner designed to be simple to build and modular. It’s first iteration was designed and built in less than 2 weeks.\n\nClass: 1lb\nRecord: 9-4\nWeapon: Horizontal Spinner",
       },
       {
         name: "Queen of Hearts",
-        image: Robot5Img,
+        image: QOH,
         subtitle:
-          "Queen of Hearts is a 4-wheel drive double-disk vertical spinner designed for both the 12lb and 15lb weight classes. Its powerful weapon sent 2 robots to the roof in its debut tournament. It is sponsored by Upgrade Energy and RE Combat Robotics.\n\nClass: 12lb/15lb\nRecord: 2-1\nWeapon: Drisk (double disk) Spinner\n\nFormerly in the BCRC",
+          "Queen of Hearts is a 4-wheel drive double-disk vertical spinner designed for both the 12lb and 15lb weight classes. Its powerful weapon sent 2 robots to the roof in its debut tournament. It is sponsored by Upgrade Energy and RE Combat Robotics.\n\nClass: 12lb/15lb\nRecord: 2-1\nWeapon: Double Disk Vertical Spinner\n\nNow competes with Team 777 at the University of Southern California.",
       },
       {
         name: "Omni Seven",
-        image: Robot5Img,
+        image: O7,
         subtitle:
-          "Omni Seven is a 3-wheel holonomic drive vertical spinner boasting a large titanium plow and AR600 disk fabricated by RE Combat Robotics. It’s unique design won the Design Award at Bell Brawls Spring 2023 and inspired many other kiwi-drive beetleweights across the nation.\n\nClass: 3lb\nRecord: 10-4\nWeapon: Vertical Spinner\n\nFormerly in the BCRC",
+          "Omni Seven is a 3-wheel holonomic drive vertical spinner boasting a large titanium plow and AR600 disk fabricated by RE Combat Robotics. It’s unique design won the Design Award at Bell Brawls Spring 2023 and inspired many other kiwi-drive beetleweights across the nation.\n\nClass: 3lb\nRecord: 10-4\nWeapon: Vertical Spinner\n\nNow competes with Team 777 at the University of Southern California.",
       },
       {
         name: "Culverizer",
-        image: Robot5Img,
+        image: Culverizer,
         subtitle:
-          "The Culverizer is a hard-hitting beetleweight horizontal spinner. It stores around 1700 joules in its 9\" blade!\n\nClass 3lb:\nRecord: 13-5\nWeapon: Horizontal Spinner\n\nFormerly in the BCRC",
+          "The Culverizer is a hard-hitting beetleweight horizontal spinner. It stores around 1700 joules in its 9\" blade!\n\nClass 3lb:\nRecord: 13-5\nWeapon: Horizontal Spinner\n\nNow competes with the Culver Commanders at Purdue University.",
       },
     ],
   },
@@ -119,7 +123,7 @@ export const ProductsContent = {
     {
       title: "Morberizer Kit",
       subtitle:
-        "Are you looking for a way to get started in combat robotics with a cheap but competitive 1lb (antweight) robot? The Morberizer kit is the perfect solution for you! Inside is a everything you need to assemble the machine and its powerful horizontal spinner.",
+        "Are you looking for a way to get started in combat robotics with a cheap but competitive 1lb (antweight) robot? The Morberizer kit is the perfect solution for you! Inside is everything you need to assemble the machine and its powerful horizontal spinner.",
       image: MorbImage,
       button: "Buy",
       disabled: true

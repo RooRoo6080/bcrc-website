@@ -2,7 +2,6 @@ import {
   Box,
   Button,
   Container,
-  Hidden,
   Stack,
   Typography,
   useMediaQuery,
@@ -19,6 +18,7 @@ import ForumIcon from '@mui/icons-material/Forum';
 
 const {
   MainBG,
+  MainBGMobile,
   Foreground,
   ForegroundR,
   Subject,
@@ -45,7 +45,7 @@ const CustomButton = ({ children, ...props }) => (
 
 const Header = () => {
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   const [ref, { height }] = useMeasure();
 
@@ -56,7 +56,7 @@ const Header = () => {
   return (
     <Box sx={{ width: "100%" }} id="top">
       <Box sx={{ position: "fixed", zIndex: -10, top: 0, left: 0, right: 0 }}>
-        <img src={MainBG} style={{ width: "100%" }} />
+        <img src={isSmallScreen ? MainBGMobile : MainBG} style={{ width: "100%" }} />
       </Box>
 
       <Box
@@ -70,7 +70,10 @@ const Header = () => {
           right: 0,
         }}
       >
-        <img src={MainBG} style={{ width: "100%", opacity: 0 }} />
+        <img src={isSmallScreen ? MainBGMobile : MainBG} style={{
+          width: "100%",
+          opacity: 0,
+        }} />
 
         <img
           src={Detail}
@@ -82,18 +85,16 @@ const Header = () => {
           }}
         />
 
-        <Hidden mdDown>
-          <img
-            src={Foreground}
-            style={{
-              position: "absolute",
-              width: "100%",
-              right: 0,
-              left: 0,
-              bottom: "13%",
-            }}
-          />
-        </Hidden>
+        <img
+          src={Foreground}
+          style={{
+            position: "absolute",
+            width: "100%",
+            right: 0,
+            left: 0,
+            bottom: "13%",
+          }}
+        />
 
         <img
           src={ForegroundR}
@@ -133,7 +134,7 @@ const Header = () => {
 
       <Container
         sx={{
-          height: "80vh",
+          height: isSmallScreen ? "45vh" : "80vh",
           mt: 8,
           [theme.breakpoints.up("md")]: { mt: 6 },
         }}
