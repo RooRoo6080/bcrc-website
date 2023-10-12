@@ -9,8 +9,13 @@ import BellBrawls from "../containers/BellBrawls";
 import Products from "../containers/Products";
 import Sponsors from "../containers/Sponsors";
 import Sponsors2 from "../containers/Sponsors2";
+import ReactGA from 'react-ga';
+import { useEffect } from 'react';
 
 const Home = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <div>
       <Navbar />
@@ -18,9 +23,9 @@ const Home = () => {
       <Box sx={{ bgcolor: "background.default", position: "relative" }}>
         <BellBrawls />
         <About />
-        <Products />
-        <Sponsors/>
-        <Sponsors2/>
+        <Sponsors />
+        <Sponsors2 />
+        <Products/>
         <Contact />
         <Footer />
       </Box>

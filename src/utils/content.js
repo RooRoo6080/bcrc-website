@@ -49,7 +49,7 @@ export const AboutContent = {
   top: {
     title: "About Us",
     subtitle:
-      "The Bellarmine Combat Robotics Competition (BCRC), established in 2022, is a student-led organization that aims to cultivate engineering skills and enhance the landscape of combat robotics in Northern California by mentoring peers and organizing events.",
+      "The Bellarmine Combat Robotics Club (BCRC) is a high school engineering community dedicated to creating combat robots. Each semester, we delve into bot-building, starting with 1-pound robots in the first semester and progressing to 3-pound bots in the second. Through lectures and meetings, we train our members in design, CAD, assembly, manufacturing, and electronics. At the end of each semester, we host Bell Brawls, our own tournament, inviting schools from across California to compete against us. These competitions have been a huge success, with our last one having more than 120 people watching and 16 teams competing! We compile all of these fights on our blossoming youtube channel, BCRCBots, which has amassed nearly 100 thousand views!",
     image: NewsImg,
   },
   bottom: {
@@ -59,7 +59,7 @@ export const AboutContent = {
         name: "Thwack!",
         image: Thwack,
         subtitle:
-          "Thwack is a multi-faceted robot with a wedge on one side and a mighty spinner on the other. It deflects hits with its frontal armor before whipping around to deliver a high-energy impact to the sides of its opponent.\n\nClass: 3lb\nRecord: 3-3\nWeapon: Horizontal Spinner",
+          "Thwack is a multi-faceted robot with a wedge on one side and a mighty spinner on the other. It deflects hits with its frontal armor before whipping around to deliver a high-energy impact to the sides of its opponent.\n\nClass: 3lb\nRecord: 5-5\nWeapon: Horizontal Spinner",
       },
       {
         name: "Bellicopter",
@@ -70,7 +70,7 @@ export const AboutContent = {
       {
         name: "Orion",
         image: Orion,
-        subtitle: "Orion is a powerful 3 pound Combat Robot that utilizes a vertical disk weapon to send opponents flying. Its 2 wheeled drive system lets it zoom across the field in seconds.\n\nClass: 3lb\nRecord: 0-2\nWeapon: Vertical Spinner",
+        subtitle: "Orion is a powerful 3 pound Combat Robot that utilizes a vertical disk weapon to send opponents flying. Its 2 wheeled drive system lets it zoom across the field in seconds.\n\nClass: 3lb\nRecord: 1-2\nWeapon: Vertical Spinner",
       },
       {
         name: "Morberizer",
@@ -114,19 +114,11 @@ export const ProductsContent = {
     {
       title: "Arena Rental",
       subtitle:
-        "A large and sturdy 30 sq. ft. arena for 3lb robot combat. Equipped with 2 full-height layers behind a kickplate, this polycarbonate arena allows for entertaining battles while keeping everyone safe. Rentable for events around the Bay Area.",
+        "A large and sturdy 35 sq. ft. arena for 3lb robot combat. Equipped with 2 full-height layers and a kickplate, this polycarbonate arena allows for entertaining battles while keeping everyone safe. Rentable for events around the Bay Area.",
       image: ArenaImg,
       button: "Contact us to inquire",
       disabled: false,
       link: "mailto:bellarminecombatrobotics@gmail.com",
-    },
-    {
-      title: "Morberizer Kit",
-      subtitle:
-        "Are you looking for a way to get started in combat robotics with a cheap but competitive 1lb (antweight) robot? The Morberizer kit is the perfect solution for you! Inside is everything you need to assemble the machine and its powerful horizontal spinner.",
-      image: MorbImage,
-      button: "Buy",
-      disabled: true
     },
   ],
 };
