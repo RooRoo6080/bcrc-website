@@ -23,6 +23,7 @@ const ServiceCard = ({ title, subtitle, image, button, disabled, link }) => {
           WebkitMaskComposite: "xor",
           maskComposite: "exlude",
         },
+        boxShadow: '0px 0px 50px 10px #1261cb' 
       }}
     >
       <Stack sx={{ height: "100%" }} spacing={1}>

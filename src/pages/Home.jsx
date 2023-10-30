@@ -23,9 +23,9 @@ const Home = () => {
       <Box sx={{ bgcolor: "background.default", position: "relative" }}>
         <BellBrawls />
         <About />
+        <Products/>
         <Sponsors />
         <Sponsors2 />
-        <Products/>
         <Contact />
         <Footer />
       </Box>

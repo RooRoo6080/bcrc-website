@@ -74,8 +74,8 @@ const BellBrawls = () => {
                   fit={true}
                   // fullWidth={isMobile}
                   sx={{ height: 48 }}
-                  disabled
-                  href="https://www.robotcombatevents.com/events/980"
+                  // disabled
+                  href="https://www.robotcombatevents.com/events/1206"
                 >
                   Sign up
                 </OutlinedButton>

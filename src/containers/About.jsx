@@ -27,7 +27,7 @@ const About = () => {
         <Grid item xs={12} md={6}>
           <img
             src={top.image}
-            style={{ width: "100%", objectFit: "contain" }}
+            style={{ width: "100%", objectFit: "contain", borderRadius: '25px', boxShadow: '0px 0px 50px 15px #1261cb' }}
           />
         </Grid>
       </Grid>
@@ -45,7 +45,7 @@ const About = () => {
         <Grid item xs={12} md={6}>
           <img
             src={bottom.TABS[tabValue].image}
-            style={{ width: "100%", objectFit: "contain" }}
+            style={{ width: "100%", objectFit: "contain", borderRadius: '50px', boxShadow: '0px 0px 50px 15px #1261cb' }}
           />
         </Grid>
 
@@ -76,7 +76,7 @@ const About = () => {
               variant="body2"
               color="text.secondary"
               sx={{ pb: 2, minHeight: 70 }}
-              style={{whiteSpace: 'pre-line'}}
+              style={{ whiteSpace: 'pre-line' }}
             >
               {bottom.TABS[tabValue].subtitle}
             </Typography>

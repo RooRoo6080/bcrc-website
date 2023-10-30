@@ -49,7 +49,7 @@ export const AboutContent = {
   top: {
     title: "About Us",
     subtitle:
-      "The Bellarmine Combat Robotics Club (BCRC) is a high school engineering community dedicated to creating combat robots. Each semester, we delve into bot-building, starting with 1-pound robots in the first semester and progressing to 3-pound bots in the second. Through lectures and meetings, we train our members in design, CAD, assembly, manufacturing, and electronics. At the end of each semester, we host Bell Brawls, our own tournament, inviting schools from across California to compete against us. These competitions have been a huge success, with our last one having more than 120 people watching and 16 teams competing! We compile all of these fights on our blossoming youtube channel, BCRCBots, which has amassed nearly 100 thousand views!",
+      "The Bellarmine Combat Robotics Club (BCRC) is a high school engineering community dedicated to creating combat robots. Each semester, we delve into bot-building, starting with 1-pound robots in the first semester and progressing to 3-pound bots in the second. Through lectures and meetings, we train our members in design, assembly, and manufacturing. At the end of each semester, we host Bell Brawls, our own tournament, inviting schools from across California to compete against us. These competitions have been a huge success, with our last one having more than 120 people watching and 16 teams competing! We compile all of these fights on our blossoming YouTube channel which has amassed nearly 100 thousand views!",
     image: NewsImg,
   },
   bottom: {
@@ -108,7 +108,7 @@ export const BellBrawlsContent = {
 };
 
 export const ProductsContent = {
-  title: "Products & Rentals",
+  title: "Rentals",
   // subtitle: "Built and designed in our lab",
   ITEMS: [
     {

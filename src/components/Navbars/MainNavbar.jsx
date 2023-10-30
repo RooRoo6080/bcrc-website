@@ -46,8 +46,8 @@ const Navbar = () => {
       sx={{
         py: 1,
         height: NAVBAR_HEIGHT,
-        bgcolor: scrollPosition > 10 ? "rgba(7,7,16,.7)" : "transparent",
-        backdropFilter: scrollPosition > 10 && "blur(60px)",
+        bgcolor: scrollPosition > 10 ? "rgba(18,97,203,.5)" : "transparent",
+        backdropFilter: scrollPosition > 10 && "blur(50px)",
       }}
     >
       <Container
@@ -91,10 +91,10 @@ const Navbar = () => {
                 <KeyboardArrowDownIcon fontSize="small" />
               </LinkButton>
 
-              {/* <LinkButton>
-                <Typography variant="body2" onClick={() => scroll("#products")}>Products & Rentals</Typography>
+              <LinkButton>
+                <Typography variant="body2" onClick={() => scroll("#products")}>Rentals</Typography>
                 <KeyboardArrowDownIcon fontSize="small" />
-              </LinkButton> */}
+              </LinkButton>
 
               <LinkButton>
                 <Typography variant="body2" onClick={() => scroll("#sponsors")}>Sponsors</Typography>

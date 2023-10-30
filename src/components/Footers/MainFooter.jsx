@@ -37,23 +37,22 @@ const Footer = () => {
   return (
     <Box>
       <Divider sx={{ m: 5 }} />
-
       <Container>
         <Stack
-          direction={{ xs: "column", md: "row" }}
-          justifyContent="space-between"
+          direction={{ xs: "column", md: "column", lg: "row"}}
+          justifyContent="flex-start"
           alignItems="center"
-          spacing={1}
+          spacing={2}
           sx={{ pb: 5 }}
         >
           <Typography variant="body2" color="text.secondary">
-            Bellarmine Combat Robotics Competition
+            Bellarmine Maker Lab
           </Typography>
           <Typography variant="body2" color="text.secondary">
             960 W Hedding St, San Jose, CA 95126
           </Typography>
           <Container />
-          <Stack direction={"row"} spacing={5}>
+          <Stack direction={"row"} spacing={2}>
             <IconButton href={"https://www.instagram.com/bcrcbots/"}>
               <InstagramIcon />
             </IconButton>

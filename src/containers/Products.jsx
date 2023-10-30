@@ -8,8 +8,8 @@ const { title, subtitle, ITEMS } = ProductsContent;
 
 const Products = () => {
   return (
-    <Container sx={{ mt: { xs: 10, md: 20, lg: 25 } }}>
-      <Title variant={{ xs: "h3", md: "h2" }} sx={{ mb: 2 }} id="products">
+    <Container sx={{ mt: { xs: 10, md: 10, lg: 25 } }}>
+      <Title variant={{ xs: "h3", md: "h2" }} sx={{ mb: 2, textAlign: "center"}} id="products" >
         {title}
       </Title>
 
@@ -22,7 +22,7 @@ const Products = () => {
         {subtitle}
       </Typography>
 
-      <Grid container spacing={3}>
+      <Grid container spacing={3} justifyContent="center">
         {ITEMS.map((item) => (
           <Grid item xs={12} md={6} key={item.title}>
             <ServiceCard {...item} />

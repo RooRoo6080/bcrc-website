@@ -1,10 +1,10 @@
 import React from "react";
-import { Route, Routes, withRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Swap from "./pages/Swap";
 import ReactGA from 'react-ga';
 
-ReactGA.initialize(GA_KEY);
+ReactGA.initialize('');
 
 const App = () => {
   return (
