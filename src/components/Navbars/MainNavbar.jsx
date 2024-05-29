@@ -78,32 +78,32 @@ const Navbar = () => {
             >
               <LinkButton>
                 <Typography variant="body2" onClick={() => scroll("#bellbrawls")}>Bell Brawls</Typography>
-                <KeyboardArrowDownIcon fontSize="small" />
+                {/* <KeyboardArrowDownIcon fontSize="small" /> */}
               </LinkButton>
 
               <LinkButton>
                 <Typography variant="body2" onClick={() => scroll("#about")}>About Us</Typography>
-                <KeyboardArrowDownIcon fontSize="small" />
+                {/* <KeyboardArrowDownIcon fontSize="small" /> */}
               </LinkButton>
 
               <LinkButton>
                 <Typography variant="body2" onClick={() => scroll("#robots")}>Robots</Typography>
-                <KeyboardArrowDownIcon fontSize="small" />
+                {/* <KeyboardArrowDownIcon fontSize="small" /> */}
               </LinkButton>
 
               <LinkButton>
                 <Typography variant="body2" onClick={() => scroll("#products")}>Rentals</Typography>
-                <KeyboardArrowDownIcon fontSize="small" />
+                {/* <KeyboardArrowDownIcon fontSize="small" /> */}
               </LinkButton>
 
               <LinkButton>
                 <Typography variant="body2" onClick={() => scroll("#sponsors")}>Sponsors</Typography>
-                <KeyboardArrowDownIcon fontSize="small" />
+                {/* <KeyboardArrowDownIcon fontSize="small" /> */}
               </LinkButton>
 
               <LinkButton>
                 <Typography variant="body2" onClick={() => scroll("#contact")}>Contact Us</Typography>
-                <KeyboardArrowDownIcon fontSize="small" />
+                {/* <KeyboardArrowDownIcon fontSize="small" /> */}
               </LinkButton>
             </Stack>
           )}

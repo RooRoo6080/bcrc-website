@@ -45,7 +45,8 @@ const About = () => {
         <Grid item xs={12} md={6}>
           <img
             src={bottom.TABS[tabValue].image}
-            style={{ width: "100%", objectFit: "contain", borderRadius: '50px', boxShadow: '0px 0px 50px 15px #1261cb' }}
+            style={{ width: "100%", objectFit: "contain", borderRadius: '50px' }}
+          // , borderRadius: '50px', boxShadow: '0px 0px 50px 15px #1261cb' 
           />
         </Grid>
 

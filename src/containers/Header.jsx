@@ -8,13 +8,15 @@ import {
   useTheme,
   IconButton,
 } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { HeaderContent } from "../utils/content";
 import useMeasure from "react-use-measure";
 import Title from "../components/Title";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import ForumIcon from '@mui/icons-material/Forum';
+import Collapse from '@mui/material/Collapse';
+
 
 const {
   MainBG,
@@ -44,6 +46,15 @@ const CustomButton = ({ children, ...props }) => (
 );
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setOpen(true);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -55,7 +66,7 @@ const Header = () => {
 
   return (
     <Box sx={{ width: "100%" }} id="top">
-      <Box sx={{ position: "fixed", zIndex: -10, top: 0, left: 0, right: 0 }}>
+      <Box sx={{ position: "fixed", zIndex: -10, top: 0, left: 0, right: 0, bottom: -100, overflow: "hidden" }}>
         <img src={isSmallScreen ? MainBGMobile : MainBG} style={{ width: "100%" }} />
       </Box>
 
@@ -111,10 +122,11 @@ const Header = () => {
           src={Subject}
           style={{
             position: "absolute",
-            height: "50%",
-            right: "18%",
-            bottom: "37%",
+            height: "100%",
+            right: "5%",
+            bottom: "15%",
             transform: "rotate(0deg)",
+            opacity: open == false ? 1 : 0.5,
             visibility: isSmallScreen ? "hidden" : "visible",
           }}
         />
@@ -131,7 +143,6 @@ const Header = () => {
           }}
         ></Box>
       </Box>
-
       <Container
         sx={{
           height: isSmallScreen ? "45vh" : "80vh",
@@ -139,43 +150,54 @@ const Header = () => {
           [theme.breakpoints.up("md")]: { mt: 6 },
         }}
       >
-        <Stack sx={{ height: "100%" }} justifyContent="center">
+        <Stack sx={{ height: "80%" }} justifyContent="center">
+
           <Title
             variant={{ xs: "h3", sm: "h2", md: "h1" }}
             sx={{ letterSpacing: "0.02em", mb: 1, textShadow: '2px 2px 0px rgba(0, 0, 0, 0.25), -2px -2px 4px rgba(0, 0, 0, 0.25)' }}
           >
-            {title}
+            <Collapse in={open}>
+              <strong>
+                <i>
+                  {title}
+                </i>
+              </strong>
+            </Collapse>
           </Title>
 
           <Title
             variant={{ xs: "h4", sm: "h3", md: "h2" }}
             sx={{ fontWeight: 500, letterSpacing: "0.05em", mb: 5 }}
           >
-            {subtitle}
+            <Collapse>
+              {subtitle}
+            </Collapse>
           </Title>
 
-          <Stack
-            direction={{ xs: "column", md: "row" }}
-            alignItems="center"
-            spacing={4}
-          >
-            <CustomButton fullWidth={isSmallScreen}>
-              <Stack sx={{ textAlign: "left" }}>
-                <Typography variant="h5" onClick={() => scroll("#bellbrawls")}>Bell Brawls</Typography>
+          <Collapse in={open}>
+            <Stack
+              direction={{ xs: "column", md: "row" }}
+              alignItems="center"
+              spacing={4}
+            >
+              <CustomButton fullWidth={isSmallScreen}>
+                <Stack sx={{ textAlign: "left" }}>
+                  <Typography variant="h5" onClick={() => scroll("#bellbrawls")}>Bell Brawls</Typography>
+                </Stack>
+              </CustomButton>
+              <Stack direction={"row"} spacing={5}>
+                <IconButton href={"https://www.instagram.com/bcrcbots/"} >
+                  <InstagramIcon sx={{ fontSize: 40 }} />
+                </IconButton>
+                <IconButton href={"https://www.youtube.com/@bcrcbots"}>
+                  <YouTubeIcon sx={{ fontSize: 40 }} />
+                </IconButton>
+                <IconButton href={"https://discord.gg/gZX2ZArbeF"}>
+                  <ForumIcon sx={{ fontSize: 40 }} />
+                </IconButton>
               </Stack>
-            </CustomButton>
-            <Stack direction={"row"} spacing={5}>
-              <IconButton href={"https://www.instagram.com/bcrcbots/"} >
-                <InstagramIcon sx={{ fontSize: 40 }} />
-              </IconButton>
-              <IconButton href={"https://www.youtube.com/@bcrcbots"}>
-                <YouTubeIcon sx={{ fontSize: 40 }} />
-              </IconButton>
-              <IconButton href={"https://discord.gg/hzvCajJf"}>
-                <ForumIcon sx={{ fontSize: 40 }} />
-              </IconButton>
             </Stack>
-          </Stack>
+          </Collapse>
         </Stack>
       </Container>
     </Box>

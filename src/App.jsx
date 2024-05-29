@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Swap from "./pages/Swap";
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('');
+ReactGA.initialize('G-NPKYFFHCNG');
 
 const App = () => {
   return (

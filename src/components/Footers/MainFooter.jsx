@@ -10,6 +10,7 @@ import React from "react";
 import Title from "../Title";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import CodeIcon from '@mui/icons-material/Code';
 
 const LinkSection = ({ title, links }) => (
   <Stack spacing={2.5}>
@@ -39,7 +40,7 @@ const Footer = () => {
       <Divider sx={{ m: 5 }} />
       <Container>
         <Stack
-          direction={{ xs: "column", md: "column", lg: "row"}}
+          direction={{ xs: "column", md: "column", lg: "row" }}
           justifyContent="flex-start"
           alignItems="center"
           spacing={2}
@@ -53,6 +54,9 @@ const Footer = () => {
           </Typography>
           <Container />
           <Stack direction={"row"} spacing={2}>
+            <IconButton href={"https://github.com/RooRoo6080/bcrc-website"}>
+              <CodeIcon />
+            </IconButton>
             <IconButton href={"https://www.instagram.com/bcrcbots/"}>
               <InstagramIcon />
             </IconButton>

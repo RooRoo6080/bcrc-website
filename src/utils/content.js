@@ -4,7 +4,7 @@ import MainBG from "../assets/images/Header/main-bg-0_1.webp";
 import MainBGMobile from "../assets/images/Header/main-bg-0_1-mobile.png";
 import Foreground from "../assets/images/Header/main-bg-1_1.png";
 import ForegroundR from "../assets/images/Header/main-bg-2_1.png";
-import Subject from "../assets/images/Header/main-bg-3.png";
+import Subject from "../assets/images/Header/main-bg-300.gif";
 
 // About
 import NewsImg from "../assets/images/About/about-image.png";
@@ -15,6 +15,10 @@ import Morberizer from "../assets/images/About/morb.png";
 import QOH from "../assets/images/About/qoh.png";
 import O7 from "../assets/images/About/o7.png";
 import Culverizer from "../assets/images/About/culv.png";
+import Tailwind from "../assets/images/About/tailwind.png";
+import Crux from "../assets/images/About/crux.png";
+import Midas from "../assets/images/About/midas.png";
+import Pancake from "../assets/images/About/pancake.png";
 
 // BellBrawls
 import BannerBgImage from "../assets/images/BellBrawls/bell-brawls-background.png";
@@ -22,7 +26,6 @@ import BannerBgImageMobile from "../assets/images/BellBrawls/bell-brawls-backgro
 
 // Products
 import ArenaImg from "../assets/images/Products/arena.png";
-import MorbImage from "../assets/images/Products/morberizer.png";
 
 // Sponsors
 import RECRLogo from "../assets/images/Sponsors/recr.png";
@@ -49,12 +52,36 @@ export const AboutContent = {
   top: {
     title: "About Us",
     subtitle:
-      "The Bellarmine Combat Robotics Club (BCRC) is a high school engineering community dedicated to creating combat robots. Each semester, we delve into bot-building, starting with 1-pound robots in the first semester and progressing to 3-pound bots in the second. Through lectures and meetings, we train our members in design, assembly, and manufacturing. At the end of each semester, we host Bell Brawls, our own tournament, inviting schools from across California to compete against us. These competitions have been a huge success, with our last one having more than 120 people watching and 16 teams competing! We compile all of these fights on our blossoming YouTube channel which has amassed nearly 100 thousand views!",
+      "The Bellarmine Combat Robotics Competition (BCRC) is an organization based in the Maker Lab that aims to promote and make robot engineering more accessible to students. BCRC hosts combat robotics competitions with 1-pound and 3-pound weight classes, where custom-made robots use weapons to fight each other (in a safely enclosed arena).\n BCRC members learn fundamental robot physics, assembly, and manufacturing by building a 1-pound robot before splitting off into teams to design and build 3-pound robots with guidance from student mentors. The BCRC uses a variety of Maker Lab tools to rapidly prototype robots with materials ranging from PLA plastic to rocket-grade titanium.\nTwice a year, the BCRC hosts Bell Brawls, a combat robotics tournament featuring a handful of the best 3-pound robots in Northern California, which are live-streamed on the BCRC YouTube channel.",
     image: NewsImg,
   },
   bottom: {
     title: "The Robots",
     TABS: [
+      {
+        name: "Tailwind",
+        image: Tailwind,
+        subtitle:
+          "Tailwind is a defense-heavy vertical spinner that sports an angled 3-piece titanium wedge setup in the front. Its thin blade, designed to cut through opponents, can spin at almost 200mph! \n\nClass: 3lb\nWeapon: Vertical Spinner",
+      },
+      {
+        name: "Midas",
+        image: Midas,
+        subtitle:
+          "Midas has a reliable but powerful undercutter that can rip robots apart. Its key feature is its sparkly gold paint job, which truly is a sight to see.\n\nClass: 3lb \nWeapon: Horizontal Spinner",
+      },
+      {
+        name: "Crux",
+        image: Crux,
+        subtitle:
+          "Crux has the largest vertical spinner in BCRC history. This robot is designed to be able to run when flipped over, hence the large forks sticking up.\n\nClass: 3lb\nWeapon: Vertical Spinner",
+      },
+      {
+        name: "Pancake",
+        image: Pancake,
+        subtitle:
+          "Pancake is a huge, direct-drive shell spinner. The >1lb of spinning mass is walked around with a shuffler, giving this robot a 50% weight bonus.\n\nClass: 3lb\nWeapon: Horizontal Spinner",
+      },
       {
         name: "Thwack!",
         image: Thwack,
@@ -70,7 +97,7 @@ export const AboutContent = {
       {
         name: "Orion",
         image: Orion,
-        subtitle: "Orion is a powerful 3 pound Combat Robot that utilizes a vertical disk weapon to send opponents flying. Its 2 wheeled drive system lets it zoom across the field in seconds.\n\nClass: 3lb\nRecord: 1-2\nWeapon: Vertical Spinner",
+        subtitle: "Orion is a powerful 3 pound Combat Robot that utilizes a vertical disk weapon to send opponents flying. Its 2 wheeled drive system lets it zoom across the field in seconds.\n\nClass: 3lb\nRecord: 3-4\nWeapon: Vertical Spinner",
       },
       {
         name: "Morberizer",
@@ -109,12 +136,12 @@ export const BellBrawlsContent = {
 
 export const ProductsContent = {
   title: "Rentals",
-  // subtitle: "Built and designed in our lab",
+  // subtitle: "Designd and built in our lab",
   ITEMS: [
     {
       title: "Arena Rental",
       subtitle:
-        "A large and sturdy 35 sq. ft. arena for 3lb robot combat. Equipped with 2 full-height layers and a kickplate, this polycarbonate arena allows for entertaining battles while keeping everyone safe. Rentable for events around the Bay Area.",
+        "A large and sturdy 35 sq. ft. arena for 3lb robot combat which is transportable in a regular minivan. Equipped with 2 full-height layers and a kickplate, this polycarbonate arena allows for entertaining battles while keeping everyone safe. Rentable for events around the Bay Area.",
       image: ArenaImg,
       button: "Contact us to inquire",
       disabled: false,
@@ -126,7 +153,7 @@ export const ProductsContent = {
 export const sponsorsTeamContent = {
   SPONSORS: [
     { image: BCPLogo, link: "https://bcp.org" },
-    { image: MakerLabLogo, link: "https://www.bcp.org/maker-lab-landing-page" },
+    { image: MakerLabLogo, link: "https://www.bcp.org/makerlab" },
     { image: RECRLogo, link: "https://www.recr.us" },
   ],
 };
