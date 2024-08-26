@@ -11,6 +11,8 @@ import { NAVBAR_HEIGHT } from "../../constants";
 import useScrollPosition from "../../hooks/useScrollPosition";
 import { navbarContent } from "../../utils/content";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import { useNavigate } from 'react-router-dom';
 
 const { Logo } = navbarContent;
 
@@ -32,6 +34,11 @@ const LinkButton = ({ children, ...props }) => (
 
 const Navbar = () => {
   const scrollPosition = useScrollPosition();
+  const navigate = useNavigate();
+
+  const handleJoin = () => {
+    navigate('/join');
+  };
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
@@ -76,6 +83,11 @@ const Navbar = () => {
               sx={{ flex: 1 }}
               flexWrap="wrap"
             >
+              <LinkButton>
+                <Typography variant="body2" onClick={handleJoin}>Join Us</Typography>
+                <KeyboardArrowRightIcon fontSize="small" />
+              </LinkButton>
+
               <LinkButton>
                 <Typography variant="body2" onClick={() => scroll("#bellbrawls")}>Bell Brawls</Typography>
                 {/* <KeyboardArrowDownIcon fontSize="small" /> */}

@@ -9,6 +9,7 @@ import BellBrawls from "../containers/BellBrawls";
 import Products from "../containers/Products";
 import Sponsors from "../containers/Sponsors";
 import Sponsors2 from "../containers/Sponsors2";
+import JoinLink from "../containers/JoinLink";
 import ReactGA from 'react-ga';
 import { useEffect } from 'react';
 
@@ -21,9 +22,10 @@ const Home = () => {
       <Navbar />
       <Header />
       <Box sx={{ bgcolor: "background.default", position: "relative" }}>
+        <JoinLink />
         <BellBrawls />
         <About />
-        <Products/>
+        <Products />
         <Sponsors />
         <Sponsors2 />
         <Contact />

@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: '#06070a';
+}
+
+div {
+    background-color: '#06070a';
+}
+
+p {
+    line-height: 1.6;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+hr {
+    margin: 3rem 0;
+    border-top: 1px solid #444;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #f8f9fa;
+}
+
+button {
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+    .text-center {
+        text-align: center !important;
+    }
+    
+    .shadow-lg {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p, ul {
+        font-size: 1rem;
+    }
+
+    img {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.animated-button {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.animated-button::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -50%;
+    width: 200%;
+    height: 300%;
+    background: conic-gradient(
+        from 0deg,
+        #0033cc,
+        #0044ff,
+        #3366ff,
+        #6699ff,
+        #99ccff,
+        #cceeff,
+        #0033cc
+    );
+    z-index: -1;
+    animation: rainbow-ripple 5s linear infinite;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.animated-button:hover::before {
+    opacity: 1;
+}
+
+.animated-button::after {
+    content: '';
+    position: absolute;
+    top: 6%;
+    left: 2.5%;
+    width: 95%;
+    height: 88%;
+    background-color: #06070a;
+    z-index: -1;
+    border-radius: 0.4rem;
+}
+
+@keyframes rainbow-ripple {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

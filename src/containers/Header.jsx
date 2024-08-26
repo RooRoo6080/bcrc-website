@@ -48,15 +48,15 @@ const CustomButton = ({ children, ...props }) => (
 const Header = () => {
   const [open, setOpen] = useState(false);
 
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setOpen(true);
-    }, 5000);
+    }, isSmallScreen ? 100 : 5000);
     return () => clearTimeout(timer);
   }, []);
-
-  const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   const [ref, { height }] = useMeasure();
 
@@ -104,6 +104,7 @@ const Header = () => {
             right: 0,
             left: 0,
             bottom: "13%",
+            visibility: isSmallScreen ? "hidden" : "visible",
           }}
         />
 
@@ -118,18 +119,19 @@ const Header = () => {
           }}
         />
 
-        <img
-          src={Subject}
-          style={{
-            position: "absolute",
-            height: "100%",
-            right: "5%",
-            bottom: "15%",
-            transform: "rotate(0deg)",
-            opacity: open == false ? 1 : 0.5,
-            visibility: isSmallScreen ? "hidden" : "visible",
-          }}
-        />
+        {!isSmallScreen ?
+          <img
+            src={Subject}
+            style={{
+              position: "absolute",
+              height: isSmallScreen ? "75%" : "100%",
+              right: isSmallScreen ? "-45%" : "5%",
+              bottom: isSmallScreen ? "32%" : "15%",
+              transform: "rotate(0deg)",
+              opacity: open == false ? 1 : 0.5,
+            }}
+          />
+          : <div />}
 
         <Box
           sx={{
@@ -180,11 +182,11 @@ const Header = () => {
               alignItems="center"
               spacing={4}
             >
-              <CustomButton fullWidth={isSmallScreen}>
+              {/* <CustomButton fullWidth={isSmallScreen}>
                 <Stack sx={{ textAlign: "left" }}>
                   <Typography variant="h5" onClick={() => scroll("#bellbrawls")}>Bell Brawls</Typography>
                 </Stack>
-              </CustomButton>
+              </CustomButton> */}
               <Stack direction={"row"} spacing={5}>
                 <IconButton href={"https://www.instagram.com/bcrcbots/"} >
                   <InstagramIcon sx={{ fontSize: 40 }} />

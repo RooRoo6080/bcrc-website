@@ -1,10 +1,10 @@
 // Header
 import Detail from "../assets/images/Header/main-bg-0-0.png";
-import MainBG from "../assets/images/Header/main-bg-0_1.webp";
+import MainBG from "../assets/images/Header/main-bg-0_1.png";
 import MainBGMobile from "../assets/images/Header/main-bg-0_1-mobile.png";
 import Foreground from "../assets/images/Header/main-bg-1_1.png";
 import ForegroundR from "../assets/images/Header/main-bg-2_1.png";
-import Subject from "../assets/images/Header/main-bg-300.gif";
+import Subject from "../assets/images/Header/main-bg-300.gif?dummy=1";
 
 // About
 import NewsImg from "../assets/images/About/about-image.png";
