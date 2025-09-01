@@ -73,12 +73,25 @@ const JoinPage = () => {
                                 style={{ textAlign: 'left', border: '1px solid #2c2c2c', borderRadius: "30px" }}
                             >
                                 <h2 style={{ fontWeight: 700, color: secondaryColor }}>Important Dates <FaCalendarAlt /></h2>
-                                <p style={{ fontWeight: 400 }}>
+                                {/* <p style={{ fontWeight: 400 }}>
                                     <strong style={{ color: primaryColor }}>Wednesday, August 28th:</strong> Exhibition fights in the Carney amphitheater during Community Time. Join us to get a taste of the action! <br />
                                     <img src={exhibitionImage} alt="BCRC Robots" style={{ width: '300px' }} className="img-fluid rounded mb-4" />
+                                </p> */}
+                                <p style={{ fontWeight: 400 }}>
+                                    <strong style={{ color: primaryColor }}>CT Tuesday, September 17th:</strong> Mandatory onboarding session where we'll discuss the steps to join and what's required.
+                                </p>
+                                <p></p>
+                                <p style={{ fontWeight: 400 }}>
+                                    <strong style={{ color: primaryColor }}>Afterschool Thursday (2:50-4:00), September 19th:</strong> Materials, manufacturing, & machine shop training
                                 </p>
                                 <p style={{ fontWeight: 400 }}>
-                                    <strong style={{ color: primaryColor }}>Wednesday, September 11th:</strong> Mandatory onboarding session where we'll discuss the steps to join and what's required.
+                                    <strong style={{ color: primaryColor }}>Afterschool Tuesday (2:50-4:00), September 24th:</strong> CAD, Advanced CAD, & tournaments overview
+                                </p>
+                                <p style={{ fontWeight: 400 }}>
+                                    <strong style={{ color: primaryColor }}>Afterschool Thursday (2:50-4:00), October 3th:</strong> Electronics, safety & robot design principles
+                                </p>
+                                <p>
+                                    These BCRC trainings are mandatory, but if you have a conflict, please email or Slack Reuel.Joseph26@bcp.org so we mark you excused from the training.
                                 </p>
                             </motion.div>
                         </Col>

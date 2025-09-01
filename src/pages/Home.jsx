@@ -22,7 +22,7 @@ const Home = () => {
       <Navbar />
       <Header />
       <Box sx={{ bgcolor: "background.default", position: "relative" }}>
-        <JoinLink />
+        {/* <JoinLink /> */}
         <BellBrawls />
         <About />
         <Products />

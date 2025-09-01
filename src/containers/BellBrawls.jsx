@@ -64,7 +64,7 @@ const BellBrawls = () => {
                   fit={true}
                   // fullWidth={isMobile}
                   sx={{ height: 48 }}
-                  href="https://youtube.com/playlist?list=PLCGo_v3ZMduxlpF7wl21AiZgtTqLeZKe5"
+                  href="https://www.youtube.com/@bcrcbots"
                 >
                   Watch
                 </OutlinedButton>
@@ -75,7 +75,7 @@ const BellBrawls = () => {
                   // fullWidth={isMobile}
                   sx={{ height: 48 }}
                   // disabled
-                  href="https://www.robotcombatevents.com/events/1206"
+                  href="https://www.robotcombatevents.com/events/4383"
                 >
                   Sign up
                 </OutlinedButton>
